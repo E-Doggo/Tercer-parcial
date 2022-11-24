@@ -10,8 +10,6 @@ function contar(texto) {
     else{
       resultado[palabra] += 1;
     }
-    //  resultado += `${arrText[i]} = 1 `
-
   }
   return resultado;
 }
