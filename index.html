@@ -2,15 +2,17 @@
   <body>
     <h1>Publicaciones</h1>
     <form id="sumar-form">
-      <textarea id="publicacion">
+      <label for="publicacion">Publicar</label>
 
-      </textarea>
+      <input type="text" id="publicacion">
       <input type="submit" value="publicar" id="publicar-button" />
     </form>
     <div>
       <h1>Lista de publicaciones</h1>
     </div>
-    <div id="resultado-div"></div>
+    <div >
+      <ul id="resultado-ul"></ul>
+    </div>
     
     <script type="module" src="./src/presenter.js"></script>
   </body>
