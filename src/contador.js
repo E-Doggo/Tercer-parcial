@@ -1,5 +1,6 @@
 function contar(texto) {
-  let arrText = texto.split(' ')
+  let text = texto.toLowerCase()
+  let arrText = text.split(' ')
   let resultado ={};
   for(let i = 0;i <arrText.length; i++){
     var palabra = arrText[i];
