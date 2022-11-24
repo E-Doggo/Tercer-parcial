@@ -22,4 +22,11 @@ describe("Publicacion", () => {
     cy.get("#resultado-ul").eq(0).should("contain", "Y esta es mi tercera publicacion");
 
   });
+
+  it("Si esta vacio salta error", () => {
+    cy.visit("/");
+    cy.get("#publicar-button").click();
+    cy.get("#resultado-div").should("contain", "No se puede ingresar un post sin texto");
+
+  });
 });
