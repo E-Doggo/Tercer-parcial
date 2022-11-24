@@ -1,7 +1,7 @@
-import sumar from "./sumador.js";
+import contar from "./contador.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Deberia darnos una cuenta de las palabras tomando en cuenta capitalizacion", () => {
+  it("Nos devolvera una sola palabra", () => {
+    expect(contar("palabra")).toEqual("palabra = 1");
   });
 });

@@ -1,4 +1,3 @@
-import sumar from "./sumador";
 
 const texto = document.querySelector("#publicacion");
 const form = document.querySelector("#sumar-form");
