@@ -19,3 +19,9 @@ describe("Deberia darnos una cuenta de las palabras sin tomar en cuenta capitali
     expect(contar("palabra tiene letras y Palabra es oracion")).toEqual({"es": 1, "letras": 1, "oracion": 1, "palabra": 2, "tiene": 1, "y": 1});
   });
 });
+
+describe("Podemos utilizar diferentes separadores", () => {
+  it("Nos devolvera de varias palabras sin capitalizacion", () => {
+    expect(contar("palabra tiene-letras,y;Palabra.es oracion")).toEqual({"es": 1, "letras": 1, "oracion": 1, "palabra": 2, "tiene": 1, "y": 1});
+  });
+});
