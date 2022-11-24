@@ -1,5 +1,10 @@
 function contar(texto) {
-  let resultado = `${texto} = 1`
+  let arrText = texto.split(' ')
+  let resultado ='';
+  for(let i = 0;i <arrText.length; i++){
+     resultado += `${arrText[i]} = 1 `
+
+  }
   return resultado;
 }
 
